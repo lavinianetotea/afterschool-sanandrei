@@ -51,7 +51,7 @@ app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
 if (isProd) {
   const clientBuild = path.join(__dirname, '../client/build');
   app.use(express.static(clientBuild));
-  app.get('*', (_req, res) => {
+  app.get('/{*path}', (_req, res) => {
     res.sendFile(path.join(clientBuild, 'index.html'));
   });
 }

@@ -1,16 +1,27 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 const { Resend } = require('resend');
 
 const app = express();
 const PORT = process.env.PORT || 5001;
 const resend = new Resend(process.env.RESEND_API_KEY);
-const isProd = process.env.NODE_ENV === 'production';
+
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://afterschoolsanandrei.ro',
+  'https://www.afterschoolsanandrei.ro',
+  process.env.FRONTEND_URL,
+].filter(Boolean);
 
 app.use(cors({
-  origin: isProd ? 'https://afterschoolsanandrei.ro' : 'http://localhost:3000',
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.some(o => origin.startsWith(o))) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
 }));
 app.use(express.json());
 
@@ -47,14 +58,6 @@ app.post('/api/contact', async (req, res) => {
 });
 
 app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
-
-if (isProd) {
-  const clientBuild = path.join(__dirname, '../client/build');
-  app.use(express.static(clientBuild));
-  app.get('/{*path}', (_req, res) => {
-    res.sendFile(path.join(clientBuild, 'index.html'));
-  });
-}
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

@@ -2,7 +2,7 @@
   "name": "afterschool-sanandrei",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Build already done locally'",
+    "build": "echo 'Frontend deployed separately on Vercel'",
     "start": "cd server && npm install && node index.js"
   }
 }

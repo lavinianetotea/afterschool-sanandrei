@@ -20,21 +20,21 @@ const values = [
 
 const team = [
   {
-    name: "Maria Ionescu",
-    role: "Director",
-    desc: "Experiență de peste 10 ani în educația timpurie.",
+    name: "Lavinia Netotea",
+    role: "CO-FONDATOR AFTER SCHOOL",
+    desc: "Mamă, pasionată de educație și tehnologie, dedicată creării unui loc în care copiii să se simtă în siguranță.",
     icon: "👩‍🏫",
   },
   {
-    name: "Ana Popescu",
-    role: "Educator",
-    desc: "Specializată în activități creative și educaționale.",
+    name: "Dan Netotea",
+    role: "CO-FONDATOR AFTER SCHOOL",
+    desc: "Tată, implicat în dezvoltarea proiectului și în crearea unui mediu organizat și prietenos pentru copii.",
     icon: "👩‍🎨",
   },
   {
-    name: "Ion Mureșan",
-    role: "Coordonator",
-    desc: "Responsabil cu programul și comunicarea cu părinții.",
+    name: "Adriana Netotea",
+    role: "ÎNVĂȚĂTOR COORDONATOR PROGRAM EDUCAȚIONAL",
+    desc: "Peste 40 de ani de experiență la catedră și o pasiune autentică pentru educația generațiilor de copii.",
     icon: "👨‍💼",
   },
 ];

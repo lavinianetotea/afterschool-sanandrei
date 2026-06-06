@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './Layout.css';
+import { Link } from "react-router-dom";
+import "./Layout.css";
 
 export default function Footer() {
   return (
@@ -20,11 +20,11 @@ export default function Footer() {
             <h4>Navigare</h4>
             <ul>
               {[
-                ['/', 'Acasă'],
-                ['/despre-noi', 'Despre noi'],
-                ['/servicii', 'Servicii'],
-                ['/galerie', 'Galerie'],
-                ['/contact', 'Contact'],
+                ["/", "Acasă"],
+                ["/despre-noi", "Despre noi"],
+                ["/servicii", "Servicii"],
+                ["/galerie", "Galerie"],
+                ["/contact", "Contact"],
               ].map(([to, label]) => (
                 <li key={to}>
                   <Link to={to}>{label}</Link>
@@ -35,14 +35,17 @@ export default function Footer() {
 
           <div className="footer-contact">
             <h4>Contact</h4>
-            <p>📍 Sânandrei, Timiș</p>
+            <p>📍 Strada Sfântul Andrei 59, Sânandrei, Timiș</p>
             <p>📞 +40 761 778 734</p>
             <p>✉️ afterschoolsanandrei@gmail.com</p>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} After School Sânandrei. Toate drepturile rezervate.</p>
+          <p>
+            © {new Date().getFullYear()} After School Sânandrei. Toate
+            drepturile rezervate.
+          </p>
         </div>
       </div>
     </footer>

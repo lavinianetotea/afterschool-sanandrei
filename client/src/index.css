@@ -125,6 +125,5 @@ section {
   font-size: 1.05rem;
   color: var(--text-muted);
   margin-bottom: 3rem;
-  max-width: 540px;
   line-height: 1.7;
 }

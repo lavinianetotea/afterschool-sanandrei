@@ -38,7 +38,10 @@ export default function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
-      if (!res.ok) throw new Error();
+      if (!res.ok) {
+        setStatus('error');
+        return;
+      }
       setStatus('success');
       setForm(initialForm);
     } catch {
@@ -68,7 +71,7 @@ export default function Contact() {
               <div className="contact-detail-icon">📍</div>
               <div>
                 <h4>Adresă</h4>
-                <p>Sânandrei, județul Timiș</p>
+                <p>Sfântul Andrei 59, Sânandrei, jud. Timiș</p>
               </div>
             </div>
 

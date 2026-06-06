@@ -1,15 +1,42 @@
-import './About.css';
+import "./About.css";
 
 const values = [
-  { icon: '❤️', title: 'Grijă', desc: 'Fiecare copil este tratat cu dragoste și atenție individualizată.' },
-  { icon: '📖', title: 'Educație', desc: 'Stimulăm curiozitatea și dorința de a învăța zilnic.' },
-  { icon: '🤝', title: 'Comunitate', desc: 'Construim relații solide de încredere cu părinții.' },
+  {
+    icon: "❤️",
+    title: "Grijă",
+    desc: "Fiecare copil este tratat cu dragoste și atenție individualizată.",
+  },
+  {
+    icon: "📖",
+    title: "Educație",
+    desc: "Stimulăm curiozitatea și dorința de a învăța zilnic.",
+  },
+  {
+    icon: "🤝",
+    title: "Comunitate",
+    desc: "Construim relații solide de încredere cu părinții.",
+  },
 ];
 
 const team = [
-  { name: 'Maria Ionescu', role: 'Director', desc: 'Experiență de peste 10 ani în educația timpurie.', icon: '👩‍🏫' },
-  { name: 'Ana Popescu', role: 'Educator', desc: 'Specializată în activități creative și educaționale.', icon: '👩‍🎨' },
-  { name: 'Ion Mureșan', role: 'Coordonator', desc: 'Responsabil cu programul și comunicarea cu părinții.', icon: '👨‍💼' },
+  {
+    name: "Maria Ionescu",
+    role: "Director",
+    desc: "Experiență de peste 10 ani în educația timpurie.",
+    icon: "👩‍🏫",
+  },
+  {
+    name: "Ana Popescu",
+    role: "Educator",
+    desc: "Specializată în activități creative și educaționale.",
+    icon: "👩‍🎨",
+  },
+  {
+    name: "Ion Mureșan",
+    role: "Coordonator",
+    desc: "Responsabil cu programul și comunicarea cu părinții.",
+    icon: "👨‍💼",
+  },
 ];
 
 export default function About() {
@@ -20,7 +47,10 @@ export default function About() {
           <div className="page-hero-inner">
             <span className="page-hero-tag">Povestea noastră</span>
             <h1>Despre noi</h1>
-            <p>Cunoaște echipa și valorile care stau la baza After School Sânandrei.</p>
+            <p>
+              Cunoaște echipa și valorile care stau la baza After School
+              Sânandrei.
+            </p>
           </div>
         </div>
       </div>
@@ -33,17 +63,26 @@ export default function About() {
               <span className="section-tag">Misiunea noastră</span>
               <h2>Un loc sigur pentru copilul tău</h2>
               <p>
-                After School Sânandrei a luat naștere din dorința de a oferi copiilor din
-                comunitatea noastră un loc sigur și stimulativ după orele de școală.
+                After School Sânandrei a luat naștere din dorința de a oferi
+                copiilor din comunitatea noastră un loc sigur, prietenos și
+                organizat, unde să își facă temele, să învețe lucruri noi, să
+                lege prietenii și să se dezvolte armonios.
               </p>
               <p>
-                De-a lungul anilor, am creat un mediu cald în care copiii sunt
-                îndrumați să-și finalizeze temele, să exploreze activități creative și
-                să socializeze într-un cadru organizat.
+                {" "}
+                Suntem o familie din Sânandrei, pasionată de educație și
+                tehnologie. În familia noastră, educația a avut întotdeauna un
+                rol important. Bunica este învățătoare în învățământul primar,
+                cu peste 40 de ani de experiență la catedră, iar valorile pe
+                care le-a transmis generațiilor de copii ne inspiră să construim
+                un mediu în care fiecare copil să se simtă apreciat, încurajat
+                și sprijinit.
               </p>
               <p>
-                Misiunea noastră este să sprijinim atât dezvoltarea copilului, cât și
-                liniștea părinților care știu că cei mici sunt în mâini bune.
+                Ne dorim ca atunci când părinții ajung acasă după o zi de muncă,
+                să își poată petrece timpul cu copiii lor fără stresul temelor
+                neterminate, știind că aceștia au avut o zi frumoasă, productivă
+                și petrecută în siguranță.
               </p>
             </div>
           </div>

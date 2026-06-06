@@ -10,7 +10,7 @@ const features = [
 
 const heroCards = [
   { icon: '📚', title: 'Ajutor la teme', desc: 'Zilnic, toate materiile' },
-  { icon: '🎨', title: 'Activități', desc: 'Creative & educative' },
+  { icon: '🇬🇧', title: 'Cursuri de engleză', desc: 'Învățare interactivă' },
   { icon: '🍽️', title: 'Masă de prânz', desc: 'Meniu sănătos zilnic' },
   { icon: '👀', title: 'Supraveghere', desc: 'Program 12:00 – 17:00' },
 ];
@@ -21,7 +21,6 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-inner">
           <div>
-            <div className="hero-tag">🏫 After School Sânandrei</div>
             <h1>Locul unde copiii cresc cu bucurie</h1>
             <p className="hero-desc">
               Supraveghere profesională, ajutor la teme, activități educative
@@ -37,9 +36,11 @@ export default function Home() {
             <div className="hero-cards-grid">
               {heroCards.map((c) => (
                 <div className="hero-mini-card" key={c.title}>
-                  <div className="card-icon">{c.icon}</div>
-                  <h4>{c.title}</h4>
-                  <p>{c.desc}</p>
+                  <div className="hero-mini-card-icon">{c.icon}</div>
+                  <div className="hero-mini-card-content">
+                    <h4>{c.title}</h4>
+                    <p>{c.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -47,27 +48,27 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="stats-bar">
-        <div className="container stats-grid">
-          <div className="stat-item">
-            <h3>50+</h3>
-            <p>Copii înscriși</p>
-          </div>
-          <div className="stat-item">
-            <h3>5+</h3>
-            <p>Ani de experiență</p>
-          </div>
-          <div className="stat-item">
-            <h3>100%</h3>
-            <p>Părinți mulțumiți</p>
-          </div>
-        </div>
-      </div>
+      {/*<div className="stats-bar">*/}
+      {/*  <div className="container stats-grid">*/}
+      {/*    <div className="stat-item">*/}
+      {/*      <h3>50+</h3>*/}
+      {/*      <p>Copii înscriși</p>*/}
+      {/*    </div>*/}
+      {/*    <div className="stat-item">*/}
+      {/*      <h3>5+</h3>*/}
+      {/*      <p>Ani de experiență</p>*/}
+      {/*    </div>*/}
+      {/*    <div className="stat-item">*/}
+      {/*      <h3>100%</h3>*/}
+      {/*      <p>Părinți mulțumiți</p>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
       <section className="features-section">
         <div className="container">
           <span className="section-tag">Ce oferim</span>
-          <h2 className="section-title">Un program complet<br />pentru copilul tău</h2>
+          <h2 className="section-title">Un program complet pentru copilul tău</h2>
           <p className="section-subtitle">
             Fiecare serviciu este gândit pentru dezvoltarea armonioasă și siguranța copilului.
           </p>

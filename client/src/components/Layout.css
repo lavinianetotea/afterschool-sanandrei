@@ -17,14 +17,22 @@
 }
 
 .navbar-logo {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: var(--primary);
-  letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    height: 100%;
 }
 
-.navbar-logo span {
-  color: var(--secondary);
+.navbar-logo-icon {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-logo-text {
+  height: 40%;
+  width: auto;
+  object-fit: contain;
 }
 
 .navbar-links {

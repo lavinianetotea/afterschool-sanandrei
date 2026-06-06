@@ -9,7 +9,8 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
-          After School <span>Sânandrei</span>
+            <img src="/logo-icon.png" alt="After School Sânandrei" className="navbar-logo-icon" />
+            <img src="/logo-text.png" alt="After School Sânandrei" className="navbar-logo-text" />
         </Link>
 
         <ul className={`navbar-links${open ? ' open' : ''}`}>

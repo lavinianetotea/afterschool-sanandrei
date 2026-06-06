@@ -4,5 +4,8 @@
   "scripts": {
     "build": "echo 'Frontend deployed separately on Vercel'",
     "start": "cd server && npm install && node index.js"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3"
   }
 }

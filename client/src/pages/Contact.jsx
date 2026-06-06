@@ -1,51 +1,54 @@
-import { useState } from 'react';
-import './About.css';
-import './Contact.css';
+import { useState } from "react";
+import "./About.css";
+import "./Contact.css";
 
 const initialForm = {
-  parentName: '',
-  childName: '',
-  phone: '',
-  email: '',
-  childAge: '',
-  message: '',
+  parentName: "",
+  childName: "",
+  phone: "",
+  email: "",
+  childAge: "",
+  message: "",
 };
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
-  const [status, setStatus] = useState('idle'); // idle | loading | success | error
+  const [status, setStatus] = useState("idle"); // idle | loading | success | error
   const [errors, setErrors] = useState({});
 
   function validate() {
     const e = {};
-    if (!form.parentName.trim()) e.parentName = 'Câmp obligatoriu';
-    if (!form.childName.trim()) e.childName = 'Câmp obligatoriu';
-    if (!form.phone.trim()) e.phone = 'Câmp obligatoriu';
-    if (!form.email.trim()) e.email = 'Câmp obligatoriu';
-    else if (!/\S+@\S+\.\S+/.test(form.email)) e.email = 'Email invalid';
+    if (!form.parentName.trim()) e.parentName = "Câmp obligatoriu";
+    if (!form.childName.trim()) e.childName = "Câmp obligatoriu";
+    if (!form.phone.trim()) e.phone = "Câmp obligatoriu";
+    if (!form.email.trim()) e.email = "Câmp obligatoriu";
+    else if (!/\S+@\S+\.\S+/.test(form.email)) e.email = "Email invalid";
     return e;
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
     const errs = validate();
-    if (Object.keys(errs).length) { setErrors(errs); return; }
+    if (Object.keys(errs).length) {
+      setErrors(errs);
+      return;
+    }
     setErrors({});
-    setStatus('loading');
+    setStatus("loading");
     try {
       const res = await fetch(`${process.env.REACT_APP_API_URL}/api/contact`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
       if (!res.ok) {
-        setStatus('error');
+        setStatus("error");
         return;
       }
-      setStatus('success');
+      setStatus("success");
       setForm(initialForm);
     } catch {
-      setStatus('error');
+      setStatus("error");
     }
   }
 
@@ -71,7 +74,7 @@ export default function Contact() {
               <div className="contact-detail-icon">📍</div>
               <div>
                 <h4>Adresă</h4>
-                <p>Sfântul Andrei 59, Sânandrei, jud. Timiș</p>
+                <p>Sfântul Andrei 59, Sânandrei, Timiș</p>
               </div>
             </div>
 
@@ -93,14 +96,23 @@ export default function Contact() {
 
             <div className="contact-hours">
               <h4>Program</h4>
-              <div className="hours-row"><span>Luni – Vineri</span><span>12:00 – 17:00</span></div>
-              <div className="hours-row"><span>Sâmbătă</span><span>Închis</span></div>
-              <div className="hours-row"><span>Duminică</span><span>Închis</span></div>
+              <div className="hours-row">
+                <span>Luni – Vineri</span>
+                <span>12:00 – 17:00</span>
+              </div>
+              <div className="hours-row">
+                <span>Sâmbătă</span>
+                <span>Închis</span>
+              </div>
+              <div className="hours-row">
+                <span>Duminică</span>
+                <span>Închis</span>
+              </div>
             </div>
           </div>
 
           <div className="contact-form-card">
-            {status === 'success' ? (
+            {status === "success" ? (
               <div className="form-success">
                 <h3>✅ Mesaj trimis cu succes!</h3>
                 <p>Îți mulțumim! Te vom contacta în cel mai scurt timp.</p>
@@ -121,7 +133,9 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Ionescu Maria"
                       />
-                      {errors.parentName && <p className="form-error">{errors.parentName}</p>}
+                      {errors.parentName && (
+                        <p className="form-error">{errors.parentName}</p>
+                      )}
                     </div>
                     <div className="form-group">
                       <label htmlFor="childName">Nume copil *</label>
@@ -132,7 +146,9 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Ionescu Andrei"
                       />
-                      {errors.childName && <p className="form-error">{errors.childName}</p>}
+                      {errors.childName && (
+                        <p className="form-error">{errors.childName}</p>
+                      )}
                     </div>
                   </div>
 
@@ -147,7 +163,9 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="+40 700 000 000"
                       />
-                      {errors.phone && <p className="form-error">{errors.phone}</p>}
+                      {errors.phone && (
+                        <p className="form-error">{errors.phone}</p>
+                      )}
                     </div>
                     <div className="form-group">
                       <label htmlFor="email">Email *</label>
@@ -159,16 +177,25 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="parinte@email.com"
                       />
-                      {errors.email && <p className="form-error">{errors.email}</p>}
+                      {errors.email && (
+                        <p className="form-error">{errors.email}</p>
+                      )}
                     </div>
                   </div>
 
                   <div className="form-group">
                     <label htmlFor="childAge">Vârsta copilului</label>
-                    <select id="childAge" name="childAge" value={form.childAge} onChange={handleChange}>
+                    <select
+                      id="childAge"
+                      name="childAge"
+                      value={form.childAge}
+                      onChange={handleChange}
+                    >
                       <option value="">Selectează...</option>
-                      {[6,7,8,9,10,11,12].map(a => (
-                        <option key={a} value={a}>{a} ani</option>
+                      {[6, 7, 8, 9, 10, 11, 12].map((a) => (
+                        <option key={a} value={a}>
+                          {a} ani
+                        </option>
                       ))}
                     </select>
                   </div>
@@ -184,18 +211,19 @@ export default function Contact() {
                     />
                   </div>
 
-                  {status === 'error' && (
-                    <p className="form-error" style={{ marginBottom: '1rem' }}>
-                      A apărut o eroare. Te rugăm să încerci din nou sau să ne contactezi telefonic.
+                  {status === "error" && (
+                    <p className="form-error" style={{ marginBottom: "1rem" }}>
+                      A apărut o eroare. Te rugăm să încerci din nou sau să ne
+                      contactezi telefonic.
                     </p>
                   )}
 
                   <button
                     type="submit"
                     className="btn btn-primary form-submit"
-                    disabled={status === 'loading'}
+                    disabled={status === "loading"}
                   >
-                    {status === 'loading' ? 'Se trimite...' : 'Trimite mesajul'}
+                    {status === "loading" ? "Se trimite..." : "Trimite mesajul"}
                   </button>
                 </form>
               </>

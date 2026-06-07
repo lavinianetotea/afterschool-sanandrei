@@ -58,7 +58,9 @@ export default function About() {
       <section>
         <div className="container">
           <div className="about-grid">
-            <div className="about-visual">🏡</div>
+            <div className="about-visual">
+              <img src="/sala-clasa.png" alt="Sala de clasă After School Sânandrei" className="about-visual-img" />
+            </div>
             <div className="about-content">
               <span className="section-tag">Misiunea noastră</span>
               <h2>Un loc sigur pentru copilul tău</h2>

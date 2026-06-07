@@ -76,6 +76,14 @@
 .hours-row:last-child { border-bottom: none; }
 .hours-row span:first-child { color: var(--text); font-weight: 600; }
 
+.hours-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-style: italic;
+  line-height: 1.5;
+}
+
 /* Form */
 .contact-form-card {
   background: var(--white);

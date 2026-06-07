@@ -21,8 +21,9 @@ export default function Contact() {
     if (!form.parentName.trim()) e.parentName = "Câmp obligatoriu";
     if (!form.childName.trim()) e.childName = "Câmp obligatoriu";
     if (!form.phone.trim()) e.phone = "Câmp obligatoriu";
+    else if (!/^(\+4|0)[0-9]{9}$/.test(form.phone.replace(/\s/g, ""))) e.phone = "Număr de telefon invalid (ex: 0761 778 734)";
     if (!form.email.trim()) e.email = "Câmp obligatoriu";
-    else if (!/\S+@\S+\.\S+/.test(form.email)) e.email = "Email invalid";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Adresă de email invalidă";
     return e;
   }
 
@@ -108,6 +109,9 @@ export default function Contact() {
                 <span>Duminică</span>
                 <span>Închis</span>
               </div>
+              <p className="hours-note">
+                Deschiderea programului After School Sânandrei va fi marți, 8 septembrie 2026.
+              </p>
             </div>
           </div>
 

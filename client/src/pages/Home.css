@@ -186,13 +186,25 @@
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 2.25rem;
+  padding: 0;
+  overflow: hidden;
   transition: box-shadow 0.22s, transform 0.22s;
 }
 
 .feature-card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-3px);
+}
+
+.feature-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.feature-card-body {
+  padding: 2rem;
 }
 
 .feature-icon-box {

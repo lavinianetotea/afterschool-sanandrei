@@ -1,18 +1,34 @@
-import { Link } from 'react-router-dom';
-import './Home.css';
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 const features = [
-  { icon: '📚', title: 'Ajutor la teme', desc: 'Cadre didactice calificate îi ajută pe copii să-și finalizeze temele zilnic, la orice materie.', color: 'purple' },
-  { icon: '👀', title: 'Supraveghere', desc: 'Program complet după școală într-un mediu sigur, organizat și supravegheat permanent.', color: 'orange' },
-  { icon: '🎨', title: 'Activități educative', desc: 'Arte, lectură, logică și proiecte creative adaptate vârstei fiecărui copil.', color: 'cyan' },
-  { icon: '🍽️', title: 'Masă de prânz', desc: 'Meniu echilibrat și sănătos pregătit zilnic din ingrediente proaspete.', color: 'green' },
+  {
+    img: "/ajutor-teme.png",
+    title: "Ajutor la teme",
+    desc: "Cadre didactice calificate îi ajută pe copii să-și finalizeze temele zilnic, la orice materie.",
+  },
+  {
+    img: "/supraveghere.png",
+    title: "Supraveghere",
+    desc: "Program complet după școală într-un mediu sigur, organizat și supravegheat permanent.",
+  },
+  {
+    img: "/activitati-educative.png",
+    title: "Activități educative",
+    desc: "Învățarea continuă și după terminarea temelor, prin activități de engleză, lectură, creație și dezvoltare a gândirii logice.",
+  },
+  {
+    img: "/masa-pranz.jpg",
+    title: "Masă de prânz",
+    desc: "Meniu echilibrat și sănătos pregătit zilnic din ingrediente proaspete.",
+  },
 ];
 
 const heroCards = [
-  { icon: '📚', title: 'Ajutor la teme', desc: 'Zilnic, toate materiile' },
-  { icon: '🇬🇧', title: 'Cursuri de engleză', desc: 'Învățare interactivă' },
-  { icon: '🍽️', title: 'Masă de prânz', desc: 'Meniu sănătos zilnic' },
-  { icon: '👀', title: 'Supraveghere', desc: 'Program 12:00 – 17:00' },
+  { icon: "📚", title: "Ajutor la teme", desc: "Zilnic, toate materiile" },
+  { icon: "🇬🇧", title: "Cursuri de engleză", desc: "Învățare interactivă" },
+  { icon: "🍽️", title: "Masă de prânz", desc: "Meniu sănătos zilnic" },
+  { icon: "👀", title: "Supraveghere", desc: "Program 12:00 – 17:00" },
 ];
 
 export default function Home() {
@@ -23,12 +39,16 @@ export default function Home() {
           <div>
             <h1>Locul unde copiii cresc cu bucurie</h1>
             <p className="hero-desc">
-              Supraveghere profesională, ajutor la teme, activități educative
-              și masă de prânz — tot ce are nevoie copilul tău după școală.
+              Supraveghere profesională, ajutor la teme, activități educative și
+              masă de prânz — tot ce are nevoie copilul tău după școală.
             </p>
             <div className="hero-buttons">
-              <Link to="/contact" className="btn btn-primary">Înscrie copilul</Link>
-              <Link to="/servicii" className="btn btn-outline">Află mai multe</Link>
+              <Link to="/contact" className="btn btn-primary">
+                Înscrie copilul
+              </Link>
+              <Link to="/servicii" className="btn btn-outline">
+                Află mai multe
+              </Link>
             </div>
           </div>
 
@@ -68,16 +88,21 @@ export default function Home() {
       <section className="features-section">
         <div className="container">
           <span className="section-tag">Ce oferim</span>
-          <h2 className="section-title">Un program complet pentru copilul tău</h2>
+          <h2 className="section-title">
+            Un program complet pentru copilul tău
+          </h2>
           <p className="section-subtitle">
-            Fiecare serviciu este gândit pentru dezvoltarea armonioasă și siguranța copilului.
+            Fiecare serviciu este gândit pentru dezvoltarea armonioasă și
+            siguranța copilului.
           </p>
           <div className="features-grid">
             {features.map((f) => (
               <div className="feature-card" key={f.title}>
-                <div className={`feature-icon-box ${f.color}`}>{f.icon}</div>
-                <h3>{f.title}</h3>
-                <p>{f.desc}</p>
+                <img src={f.img} alt={f.title} className="feature-card-img" />
+                <div className="feature-card-body">
+                  <h3>{f.title}</h3>
+                  <p>{f.desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -87,10 +112,20 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="cta-section">
-            <span className="section-tag" style={{ background: 'rgba(255,255,255,0.2)', color: '#fff' }}>Locuri limitate</span>
+            <span
+              className="section-tag"
+              style={{ background: "rgba(255,255,255,0.2)", color: "#fff" }}
+            >
+              Locuri limitate
+            </span>
             <h2>Gata să înscrii copilul?</h2>
-            <p>Contactează-ne astăzi pentru mai multe informații și disponibilitate.</p>
-            <Link to="/contact" className="btn btn-primary">Contactează-ne acum</Link>
+            <p>
+              Contactează-ne astăzi pentru mai multe informații și
+              disponibilitate.
+            </p>
+            <Link to="/contact" className="btn btn-primary">
+              Contactează-ne acum
+            </Link>
           </div>
         </div>
       </section>

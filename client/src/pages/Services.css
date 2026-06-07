@@ -1,3 +1,10 @@
+.service-card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -8,8 +15,13 @@
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 2.5rem;
+  padding: 0;
+  overflow: hidden;
   transition: box-shadow 0.22s, transform 0.22s;
+}
+
+.service-card-body {
+  padding: 2.5rem;
 }
 
 .service-card:hover {

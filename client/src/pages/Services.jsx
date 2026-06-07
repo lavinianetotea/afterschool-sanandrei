@@ -7,6 +7,7 @@ const services = [
     icon: "📚",
     color: "purple",
     title: "Ajutor la teme",
+    img: "/ajutor-teme.png",
     desc: "Copiii beneficiază de asistență individualizată la teme, cu sprijinul cadrelor noastre calificate.",
     features: [
       "Sprijin la toate materiile",
@@ -19,6 +20,7 @@ const services = [
     icon: "👀",
     color: "orange",
     title: "Supraveghere după școală",
+    img: "/supraveghere.png",
     desc: "Un mediu sigur, organizat și supravegheat permanent pentru copiii tăi.",
     features: [
       "Program 12:00 – 17:00",
@@ -31,6 +33,7 @@ const services = [
     icon: "🎨",
     color: "cyan",
     title: "Activități educative",
+    img: "/activitati-educative.png",
     desc: "Programe creative care stimulează gândirea critică, creativitatea și socializarea.",
     features: [
       "Limba engleză",
@@ -44,6 +47,7 @@ const services = [
     icon: "🍽️",
     color: "green",
     title: "Masă de prânz",
+    img: "/masa-pranz.jpg",
     desc: "Masă caldă furnizată de un serviciu de catering, atent selectat pentru a oferi copiilor preparate gustoase și potrivite vârstei lor.",
     features: [
       "Meniu diversificat săptămânal",
@@ -89,16 +93,20 @@ export default function Services() {
           <div className="services-grid">
             {services.map((s) => (
               <div className="service-card" key={s.title}>
-                <div className="service-card-top">
-                  <div className={`service-icon-box ${s.color}`}>{s.icon}</div>
-                  <h3>{s.title}</h3>
+                {s.img && (
+                  <img src={s.img} alt={s.title} className="service-card-img" />
+                )}
+                <div className="service-card-body">
+                  <div className="service-card-top">
+                    <h3>{s.title}</h3>
+                  </div>
+                  <p>{s.desc}</p>
+                  <ul className="service-features">
+                    {s.features.map((f) => (
+                      <li key={f}>{f}</li>
+                    ))}
+                  </ul>
                 </div>
-                <p>{s.desc}</p>
-                <ul className="service-features">
-                  {s.features.map((f) => (
-                    <li key={f}>{f}</li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>

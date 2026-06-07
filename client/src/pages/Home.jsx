@@ -25,10 +25,10 @@ const features = [
 ];
 
 const heroCards = [
-  { icon: "📚", title: "Ajutor la teme", desc: "Zilnic, toate materiile" },
-  { icon: "🇬🇧", title: "Cursuri de engleză", desc: "Învățare interactivă" },
-  { icon: "🍽️", title: "Masă de prânz", desc: "Meniu sănătos zilnic" },
-  { icon: "👀", title: "Supraveghere", desc: "Program 12:00 – 17:00" },
+  { img: "/hero-teme.png", title: "Ajutor la teme", desc: "Zilnic, toate materiile" },
+  { img: "/hero-engleza.png", title: "Cursuri de engleză", desc: "Învățare interactivă" },
+  { img: "/hero-masa.png", title: "Masă de prânz", desc: "Meniu sănătos zilnic" },
+  { img: "/hero-supraveghere.png", title: "Supraveghere", desc: "Program 12:00 – 17:00" },
 ];
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
             <div className="hero-cards-grid">
               {heroCards.map((c) => (
                 <div className="hero-mini-card" key={c.title}>
-                  <div className="hero-mini-card-icon">{c.icon}</div>
+                  <img src={c.img} alt={c.title} className="hero-mini-card-icon" />
                   <div className="hero-mini-card-content">
                     <h4>{c.title}</h4>
                     <p>{c.desc}</p>

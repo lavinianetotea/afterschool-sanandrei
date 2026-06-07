@@ -2,15 +2,15 @@ import "./About.css";
 import "./Gallery.css";
 
 const photos = [
-  { icon: "📚", label: "Ore de teme", large: true },
-  { icon: "🎨", label: "Atelier de desen" },
-  { icon: "🍽️", label: "Masa de prânz" },
-  { icon: "🧩", label: "Jocuri educative" },
-  { icon: "🌿", label: "Activități în aer liber", large: true },
-  { icon: "📖", label: "Lectură" },
-  { icon: "✏️", label: "Exerciții creative" },
-  { icon: "🤝", label: "Lucru în echipă" },
-  { icon: "🏃", label: "Activitate fizică" },
+  { img: "/hero-teme.png", label: "Ore de teme" },
+  { img: "/hero-engleza.png", label: "Atelier de engleză" },
+  { img: "/hero-masa.png", label: "Masă de prânz" },
+  { img: "/hero-jocuri.png", label: "Jocuri educative" },
+  { img: "/hero-aer-liber.png", label: "Activități în aer liber" },
+  { img: "/hero-lectura.png", label: "Lectură" },
+  { img: "/hero-creative.png", label: "Exerciții creative" },
+  { img: "/hero-echipa.png", label: "Lucru în echipă" },
+  { img: "/hero-sport.png", label: "Activitate fizică" },
 ];
 
 export default function Gallery() {
@@ -30,8 +30,8 @@ export default function Gallery() {
         <div className="container">
           <div className="gallery-grid">
             {photos.map((p, i) => (
-              <div className={`gallery-item${p.large ? " large" : ""}`} key={i}>
-                {p.icon}
+              <div className="gallery-item" key={i}>
+                <img src={p.img} alt={p.label} className="gallery-img" />
                 <div className="gallery-caption">{p.label}</div>
               </div>
             ))}

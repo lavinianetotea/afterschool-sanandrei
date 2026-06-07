@@ -93,43 +93,61 @@
 }
 
 /* Values */
-.values-section { background: var(--bg-gray); }
+.values-section {
+  background: var(--bg-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.values-section .section-tag {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: none;
+}
+
+.values-section .section-title {
+  color: var(--text);
+}
 
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .value-card {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
-  transition: box-shadow 0.22s, transform 0.22s;
+  transition: transform 0.22s;
+  position: relative;
 }
 
 .value-card:hover {
+  transform: translateY(-4px);
   box-shadow: var(--shadow);
-  transform: translateY(-3px);
 }
 
-.value-icon {
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
+.value-icon-img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin: 0 auto 1.25rem;
   display: block;
+  filter: drop-shadow(0 0 18px rgba(255,200,80,0.45));
 }
 
 .value-card h4 {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   color: var(--text);
 }
 
 .value-card p {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   line-height: 1.65;
 }

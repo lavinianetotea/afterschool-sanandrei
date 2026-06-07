@@ -23,19 +23,19 @@ const team = [
     name: "Lavinia Netotea",
     role: "CO-FONDATOR AFTER SCHOOL",
     desc: "Mamă, pasionată de educație și tehnologie, dedicată creării unui loc în care copiii să se simtă în siguranță.",
-    icon: "👩‍🏫",
+    photo: "/lavinia-netotea.jpg",
   },
   {
     name: "Dan Netotea",
     role: "CO-FONDATOR AFTER SCHOOL",
     desc: "Tată, implicat în dezvoltarea proiectului și în crearea unui mediu organizat și prietenos pentru copii.",
-    icon: "👩‍🎨",
+    photo: "/dan-netotea.png",
   },
   {
     name: "Adriana Netotea",
     role: "ÎNVĂȚĂTOR COORDONATOR PROGRAM EDUCAȚIONAL",
     desc: "Peste 40 de ani de experiență la catedră și o pasiune autentică pentru educația generațiilor de copii.",
-    icon: "👨‍💼",
+    photo: "/adriana-netotea.png",
   },
 ];
 
@@ -115,7 +115,11 @@ export default function About() {
           <div className="team-grid">
             {team.map((m) => (
               <div className="team-card" key={m.name}>
-                <div className="team-avatar">{m.icon}</div>
+                <div className="team-avatar">
+                  {m.photo
+                    ? <img src={m.photo} alt={m.name} className="team-avatar-img" />
+                    : m.icon}
+                </div>
                 <h3>{m.name}</h3>
                 <span className="role">{m.role}</span>
                 <p>{m.desc}</p>

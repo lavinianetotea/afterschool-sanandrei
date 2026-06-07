@@ -2,19 +2,19 @@ import "./About.css";
 
 const values = [
   {
-    icon: "❤️",
+    img: "/icon-grija.png",
     title: "Grijă",
-    desc: "Fiecare copil este tratat cu dragoste și atenție individualizată.",
+    desc: "Suntem înainte de toate părinți și știm cât de important este să îți lași copilul într-un loc în care te simți liniștit.",
   },
   {
-    icon: "📖",
+    img: "/icon-educatie.png",
     title: "Educație",
-    desc: "Stimulăm curiozitatea și dorința de a învăța zilnic.",
+    desc: "Punem accent pe înțelegere, autonomie și bucuria de a descoperi lucruri noi.",
   },
   {
-    icon: "🤝",
+    img: "/icon-comunitate.png",
     title: "Comunitate",
-    desc: "Construim relații solide de încredere cu părinții.",
+    desc: "Suntem mai mult decât un after-school, suntem parte din comunitatea din Sânandrei.",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function About() {
           <div className="values-grid">
             {values.map((v) => (
               <div className="value-card" key={v.title}>
-                <span className="value-icon">{v.icon}</span>
+                <img src={v.img} alt={v.title} className="value-icon-img" />
                 <h4>{v.title}</h4>
                 <p>{v.desc}</p>
               </div>
@@ -116,9 +116,15 @@ export default function About() {
             {team.map((m) => (
               <div className="team-card" key={m.name}>
                 <div className="team-avatar">
-                  {m.photo
-                    ? <img src={m.photo} alt={m.name} className="team-avatar-img" />
-                    : m.icon}
+                  {m.photo ? (
+                    <img
+                      src={m.photo}
+                      alt={m.name}
+                      className="team-avatar-img"
+                    />
+                  ) : (
+                    m.icon
+                  )}
                 </div>
                 <h3>{m.name}</h3>
                 <span className="role">{m.role}</span>

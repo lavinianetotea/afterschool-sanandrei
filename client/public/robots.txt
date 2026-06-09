@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://afterschoolsanandrei.ro/sitemap.xml
+Sitemap: https://www.afterschoolsanandrei.ro/sitemap.xml

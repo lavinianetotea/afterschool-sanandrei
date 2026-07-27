@@ -37,6 +37,12 @@ const team = [
     desc: "Peste 40 de ani de experiență la catedră și o pasiune autentică pentru educația generațiilor de copii.",
     photo: "/adriana-netotea.png",
   },
+  {
+    name: "Aurora Ispas",
+    role: "ÎNVĂȚĂTOARE",
+    desc: "Experiența nu se măsoară doar în ani, ci în generații de copii îndrumați cu grijă. Peste 40 de ani dedicați educației.",
+    photo: "/aurora-ispas.jpg",
+  },
 ];
 
 export default function About() {
@@ -59,7 +65,11 @@ export default function About() {
         <div className="container">
           <div className="about-grid">
             <div className="about-visual">
-              <img src="/sala-clasa.png" alt="Sala de clasă After School Sânandrei" className="about-visual-img" />
+              <img
+                src="/sala-clasa.png"
+                alt="Sala de clasă After School Sânandrei"
+                className="about-visual-img"
+              />
             </div>
             <div className="about-content">
               <span className="section-tag">Misiunea noastră</span>

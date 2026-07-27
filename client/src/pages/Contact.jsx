@@ -196,7 +196,7 @@ export default function Contact() {
                       onChange={handleChange}
                     >
                       <option value="">Selectează...</option>
-                      {[6, 7, 8, 9, 10, 11, 12].map((a) => (
+                      {[5, 6, 7, 8, 9, 10, 11, 12].map((a) => (
                         <option key={a} value={a}>
                           {a} ani
                         </option>

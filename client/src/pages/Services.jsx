@@ -7,7 +7,7 @@ const services = [
     icon: "📚",
     color: "purple",
     title: "Ajutor la teme",
-    img: "/ajutor-teme.png",
+    img: "/servicii/ajutor-teme.png",
     desc: "Copiii beneficiază de asistență individualizată la teme, cu sprijinul cadrelor noastre calificate.",
     features: [
       "Sprijin la toate materiile",
@@ -20,7 +20,7 @@ const services = [
     icon: "👀",
     color: "orange",
     title: "Supraveghere după școală",
-    img: "/supraveghere.png",
+    img: "/servicii/supraveghere.png",
     desc: "Un mediu sigur, organizat și supravegheat permanent pentru copiii tăi.",
     features: [
       "Program 12:00 – 17:00",
@@ -33,7 +33,7 @@ const services = [
     icon: "🎨",
     color: "cyan",
     title: "Activități educative",
-    img: "/activitati-educative.png",
+    img: "/servicii/activitati-educative.png",
     desc: "Programe creative care stimulează gândirea critică, creativitatea și socializarea.",
     features: [
       "Limba engleză",
@@ -47,7 +47,7 @@ const services = [
     icon: "🍽️",
     color: "green",
     title: "Masă de prânz",
-    img: "/masa-pranz.jpg",
+    img: "/servicii/masa-pranz.jpg",
     desc: "Masă caldă furnizată de un serviciu de catering, atent selectat pentru a oferi copiilor preparate gustoase și potrivite vârstei lor.",
     features: [
       "Meniu diversificat săptămânal",

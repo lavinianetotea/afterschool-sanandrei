@@ -9,8 +9,8 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
-            <img src="/logo-icon.png" alt="After School Sânandrei" className="navbar-logo-icon" />
-            <img src="/logo-text.png" alt="After School Sânandrei" className="navbar-logo-text" />
+            <img src="/logo/logo-icon.png" alt="After School Sânandrei" className="navbar-logo-icon" />
+            <img src="/logo/logo-text.png" alt="After School Sânandrei" className="navbar-logo-text" />
         </Link>
 
         <ul className={`navbar-links${open ? ' open' : ''}`}>
@@ -19,6 +19,7 @@ export default function Navbar() {
             ['/despre-noi', 'Despre noi'],
             ['/servicii', 'Servicii'],
             ['/galerie', 'Galerie'],
+            ['/blog', 'Blog'],
             ['/contact', 'Contact'],
           ].map(([to, label]) => (
             <li key={to}>

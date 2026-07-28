@@ -3,32 +3,32 @@ import "./Home.css";
 
 const features = [
   {
-    img: "/ajutor-teme.png",
+    img: "/servicii/ajutor-teme.png",
     title: "Ajutor la teme",
     desc: "Cadre didactice calificate îi ajută pe copii să-și finalizeze temele zilnic, la orice materie.",
   },
   {
-    img: "/supraveghere.png",
+    img: "/servicii/supraveghere.png",
     title: "Supraveghere",
     desc: "Program complet după școală într-un mediu sigur, organizat și supravegheat permanent.",
   },
   {
-    img: "/activitati-educative.png",
+    img: "/servicii/activitati-educative.png",
     title: "Activități educative",
     desc: "Învățarea continuă și după terminarea temelor, prin activități de engleză, lectură, creație și dezvoltare a gândirii logice.",
   },
   {
-    img: "/masa-pranz.jpg",
+    img: "/servicii/masa-pranz.jpg",
     title: "Masă de prânz",
     desc: "Meniu echilibrat și sănătos pregătit zilnic din ingrediente proaspete.",
   },
 ];
 
 const heroCards = [
-  { img: "/hero-teme.png", title: "Ajutor la teme", desc: "Zilnic, toate materiile" },
-  { img: "/hero-engleza.png", title: "Cursuri de engleză", desc: "Învățare interactivă" },
-  { img: "/hero-masa.png", title: "Masă de prânz", desc: "Meniu sănătos zilnic" },
-  { img: "/hero-supraveghere.png", title: "Supraveghere", desc: "Program 12:00 – 17:00" },
+  { img: "/hero/hero-teme.png", title: "Ajutor la teme", desc: "Zilnic, toate materiile" },
+  { img: "/hero/hero-engleza.png", title: "Cursuri de engleză", desc: "Învățare interactivă" },
+  { img: "/hero/hero-masa.png", title: "Masă de prânz", desc: "Meniu sănătos zilnic" },
+  { img: "/hero/hero-supraveghere.png", title: "Supraveghere", desc: "Program 12:00 – 17:00" },
 ];
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
             <h1>Locul unde copiii cresc cu bucurie</h1>
             <p className="hero-desc">
               Supraveghere profesională, ajutor la teme, activități educative și
-              masă de prânz — tot ce are nevoie copilul tău după școală.
+              masă de prânz. Tot ce are nevoie copilul tău după școală.
             </p>
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">

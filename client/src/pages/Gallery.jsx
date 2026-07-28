@@ -2,15 +2,15 @@ import "./About.css";
 import "./Gallery.css";
 
 const photos = [
-  { img: "/hero-teme.png", label: "Ore de teme" },
-  { img: "/hero-engleza.png", label: "Atelier de engleză" },
-  { img: "/hero-masa.png", label: "Masă de prânz" },
-  { img: "/hero-jocuri.png", label: "Jocuri educative" },
-  { img: "/hero-aer-liber.png", label: "Activități în aer liber" },
-  { img: "/hero-lectura.png", label: "Lectură" },
-  { img: "/hero-creative.png", label: "Exerciții creative" },
-  { img: "/hero-echipa.png", label: "Lucru în echipă" },
-  { img: "/hero-sport.png", label: "Activitate fizică" },
+  { img: "/hero/hero-teme.png", label: "Ore de teme" },
+  { img: "/hero/hero-engleza.png", label: "Atelier de engleză" },
+  { img: "/hero/hero-masa.png", label: "Masă de prânz" },
+  { img: "/hero/hero-jocuri.png", label: "Jocuri educative" },
+  { img: "/hero/hero-aer-liber.png", label: "Activități în aer liber" },
+  { img: "/hero/hero-lectura.png", label: "Lectură" },
+  { img: "/hero/hero-creative.png", label: "Exerciții creative" },
+  { img: "/hero/hero-echipa.png", label: "Lucru în echipă" },
+  { img: "/hero/hero-sport.png", label: "Activitate fizică" },
 ];
 
 export default function Gallery() {

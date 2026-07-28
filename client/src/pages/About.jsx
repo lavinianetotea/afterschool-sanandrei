@@ -2,17 +2,17 @@ import "./About.css";
 
 const values = [
   {
-    img: "/icon-grija.png",
+    img: "/icons/icon-grija.png",
     title: "Grijă",
     desc: "Suntem înainte de toate părinți și știm cât de important este să îți lași copilul într-un loc în care te simți liniștit.",
   },
   {
-    img: "/icon-educatie.png",
+    img: "/icons/icon-educatie.png",
     title: "Educație",
     desc: "Punem accent pe înțelegere, autonomie și bucuria de a descoperi lucruri noi.",
   },
   {
-    img: "/icon-comunitate.png",
+    img: "/icons/icon-comunitate.png",
     title: "Comunitate",
     desc: "Suntem mai mult decât un after-school, suntem parte din comunitatea din Sânandrei.",
   },
@@ -23,25 +23,25 @@ const team = [
     name: "Lavinia Netotea",
     role: "CO-FONDATOR AFTER SCHOOL",
     desc: "Mamă, pasionată de educație și tehnologie, dedicată creării unui loc în care copiii să se simtă în siguranță.",
-    photo: "/lavinia-netotea.jpg",
+    photo: "/echipa/lavinia-netotea.jpg",
   },
   {
     name: "Dan Netotea",
     role: "CO-FONDATOR AFTER SCHOOL",
     desc: "Tată, implicat în dezvoltarea proiectului și în crearea unui mediu organizat și prietenos pentru copii.",
-    photo: "/dan-netotea.png",
+    photo: "/echipa/dan-netotea.png",
   },
   {
     name: "Adriana Netotea",
     role: "ÎNVĂȚĂTOR COORDONATOR PROGRAM EDUCAȚIONAL",
     desc: "Peste 40 de ani de experiență la catedră și o pasiune autentică pentru educația generațiilor de copii.",
-    photo: "/adriana-netotea.png",
+    photo: "/echipa/adriana-netotea.png",
   },
   {
     name: "Aurora Ispas",
     role: "ÎNVĂȚĂTOARE",
     desc: "Experiența nu se măsoară doar în ani, ci în generații de copii îndrumați cu grijă. Peste 40 de ani dedicați educației.",
-    photo: "/aurora-ispas.jpg",
+    photo: "/echipa/aurora-ispas.jpg",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function About() {
           <div className="about-grid">
             <div className="about-visual">
               <img
-                src="/sala-clasa.png"
+                src="/servicii/sala-clasa.png"
                 alt="Sala de clasă After School Sânandrei"
                 className="about-visual-img"
               />

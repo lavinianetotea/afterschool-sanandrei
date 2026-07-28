@@ -24,6 +24,7 @@ export default function Footer() {
                 ["/despre-noi", "Despre noi"],
                 ["/servicii", "Servicii"],
                 ["/galerie", "Galerie"],
+                ["/blog", "Blog"],
                 ["/contact", "Contact"],
               ].map(([to, label]) => (
                 <li key={to}>

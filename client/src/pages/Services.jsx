@@ -115,7 +115,6 @@ export default function Services() {
 
       <section className="schedule-section">
         <div className="container">
-          <span className="section-tag">Zi tipică</span>
           <h2 className="section-title">Programul zilnic</h2>
           <p className="section-subtitle">
             O zi obișnuită la After School Sânandrei.
@@ -138,6 +137,40 @@ export default function Services() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section className="pricing-section">
+        <div className="container">
+          <h2 className="section-title">Cât costă?</h2>
+          <p className="section-subtitle">
+            Prețuri transparente, fără costuri ascunse.
+          </p>
+          <div className="pricing-card">
+            <div className="pricing-price">
+              <span className="pricing-amount">1200</span>
+              <div className="pricing-suffix">
+                <span className="pricing-currency">RON</span>
+                <span className="pricing-period">/ lună</span>
+              </div>
+            </div>
+            <ul className="pricing-includes">
+              <li>Ajutor la teme, sprijin la toate materiile</li>
+              <li>Engleză de două ori pe săptămână</li>
+              <li>Feedback lunar pentru părinți</li>
+              <li>Materiale de studiu incluse</li>
+            </ul>
+            <ul className="pricing-notes">
+              <li>
+                Abonamentul lunar de bază (1200 ron) se achită integral,
+                indiferent de numărul absențelor copilului.
+              </li>
+              <li>
+                Taxa de masă se achită suplimentar doar pentru zilele în care
+                copilul este prezent.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

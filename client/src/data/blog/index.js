@@ -1,15 +1,15 @@
 export const ARTICLES = [
-  // {
-  //   slug: "pregatirea-pentru-scoala",
-  //   title: "Cum pregătim copilul pentru începutul școlii",
-  //   description:
-  //     "Ghiozdanul e gata, dar copilul tău e pregătit? Dincolo de litere și cifre, iată ce contează cu adevărat în prima zi de clasa I.",
-  //   category: "Idei pentru părinți",
-  //   publishDate: "2026-08-20",
-  //   image: "/blog/pregatirea-pentru-scoala.jpg",
-  //   imageAlt: "Copil zâmbitor cu ghiozdan în prima zi de școală",
-  //   readingTimeMinutes: 7,
-  // },
+  {
+    slug: "cum-alegi-after-school",
+    title: "7 criterii esențiale când alegi un after-school pentru copilul tău",
+    description:
+      "Nu toate after-school-urile sunt la fel. Iată ce să verifici înainte de a semna contractul, dincolo de preț și distanță.",
+    category: "Idei pentru părinți",
+    publishDate: "2026-08-02",
+    image: "/blog/cum-alegi-after-school.jpg",
+    imageAlt: "Copil fericit într-o sală de after-school luminoasă",
+    readingTimeMinutes: 6,
+  },
   {
     slug: "de-ce-uita-copiii",
     title: "De ce uită copiii atât de repede ceea ce învață?",
@@ -21,6 +21,17 @@ export const ARTICLES = [
     imageAlt: "Copil care privește nedumerit un caiet cu lecții",
     readingTimeMinutes: 6,
   },
+  // {
+  //   slug: "pregatirea-pentru-scoala",
+  //   title: "Cum pregătim copilul pentru începutul școlii",
+  //   description:
+  //     "Ghiozdanul e gata, dar copilul tău e pregătit? Dincolo de litere și cifre, iată ce contează cu adevărat în prima zi de clasa I.",
+  //   category: "Idei pentru părinți",
+  //   publishDate: "2026-08-20",
+  //   image: "/blog/pregatirea-pentru-scoala.jpg",
+  //   imageAlt: "Copil zâmbitor cu ghiozdan în prima zi de școală",
+  //   readingTimeMinutes: 7,
+  // },
   // {
   //   slug: "ajutor-teme-eficient",
   //   title: "Cum îl ajuți pe copil la teme fără certuri — 7 strategii dovedite",

@@ -43,17 +43,18 @@ export const ARTICLES = [
   //   imageAlt: "Copil care citește calm la birou după-amiaza",
   //   readingTimeMinutes: 5,
   // },
-  // {
-  //   slug: "dezvoltarea-emotionala",
-  //   title: "Cum dezvoltăm autonomia și inteligența emoțională a copilului pas cu pas",
-  //   description:
-  //     "IQ-ul explică mai puțin de 25% din succesul în viață. Restul se construiește zilnic, între 6 și 10 ani. Iată cum.",
-  //   category: "Dezvoltarea copilului",
-  //   publishDate: "2026-09-18",
-  //   image: "/blog/dezvoltarea-emotionala.jpg",
-  //   imageAlt: "Copii care colaborează la o activitate în grup",
-  //   readingTimeMinutes: 7,
-  // },
+  {
+    slug: "dezvoltarea-emotionala",
+    title:
+      "Cum dezvoltăm autonomia și inteligența emoțională a copilului pas cu pas",
+    description:
+      "IQ-ul explică mai puțin de 25% din succesul în viață. Restul se construiește zilnic, între 6 și 10 ani. Iată cum.",
+    category: "Dezvoltarea copilului",
+    publishDate: "2026-07-29",
+    image: "/blog/dezvoltarea-emotionala.jpg",
+    imageAlt: "Copii care colaborează la o activitate în grup",
+    readingTimeMinutes: 7,
+  },
   {
     slug: "invatarea-limbilor-straine",
     title:

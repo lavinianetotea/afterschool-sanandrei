@@ -10,17 +10,17 @@ export const ARTICLES = [
   //   imageAlt: "Copil zâmbitor cu ghiozdan în prima zi de școală",
   //   readingTimeMinutes: 7,
   // },
-  // {
-  //   slug: "de-ce-uita-copiii",
-  //   title: "De ce uită copiii atât de repede ceea ce învață?",
-  //   description:
-  //     "Nu este lene, nu este rea-voință — este biologie. Curba uitării lui Ebbinghaus explică totul, iar soluția nu este să repeți mai mult, ci mai inteligent.",
-  //   category: "Educație",
-  //   publishDate: "2026-10-01",
-  //   image: "/blog/de-ce-uita-copiii.jpg",
-  //   imageAlt: "Copil care privește nedumerit un caiet cu lecții",
-  //   readingTimeMinutes: 6,
-  // },
+  {
+    slug: "de-ce-uita-copiii",
+    title: "De ce uită copiii atât de repede ceea ce învață?",
+    description:
+      "Nu este lene, nu este rea-voință, este biologie. Curba uitării lui Ebbinghaus explică totul, iar soluția nu este să repeți mai mult, ci mai inteligent.",
+    category: "Educație",
+    publishDate: "2026-07-27",
+    image: "/blog/de-ce-uita-copiii.jpg",
+    imageAlt: "Copil care privește nedumerit un caiet cu lecții",
+    readingTimeMinutes: 6,
+  },
   // {
   //   slug: "ajutor-teme-eficient",
   //   title: "Cum îl ajuți pe copil la teme fără certuri — 7 strategii dovedite",

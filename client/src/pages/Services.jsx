@@ -169,6 +169,10 @@ export default function Services() {
                 Taxa de masă se achită suplimentar doar pentru zilele în care
                 copilul este prezent.
               </li>
+              <li>
+                În vacanțele școlare, programul este extins 08:00–17:00, cu o
+                contribuție suplimentară de 50 RON/zi.
+              </li>
             </ul>
           </div>
         </div>

@@ -22,7 +22,8 @@ export default function Footer() {
               {[
                 ["/", "Acasă"],
                 ["/despre-noi", "Despre noi"],
-                ["/after-school", "Servicii"],
+                ["/after-school", "After-school"],
+                ["/cursuri-engleza", "Cursuri engleză"],
                 ["/galerie", "Galerie"],
                 ["/blog", "Blog"],
                 ["/contact", "Contact"],

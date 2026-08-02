@@ -31,7 +31,10 @@ export default function CursuriEngleza() {
   return (
     <>
       {selectedPlan && (
-        <EnrollModal plan={selectedPlan} onClose={() => setSelectedPlan(null)} />
+        <EnrollModal
+          plan={selectedPlan}
+          onClose={() => setSelectedPlan(null)}
+        />
       )}
       <div className="page-hero engleza-hero">
         <div className="container">
@@ -124,8 +127,7 @@ export default function CursuriEngleza() {
                 <hr className="engleza-plan-divider" />
                 <div className="engleza-plan-sibling">
                   <span className="engleza-plan-sibling-label">
-                    Reducere pentru frați (la abonamentul celui de-al doilea
-                    copil)
+                    Reducere pentru frați
                   </span>
                   <span className="engleza-plan-sibling-discount">-10%</span>
                 </div>

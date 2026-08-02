@@ -23,7 +23,7 @@
 }
 
 .blog-post-back {
-  display: inline-block;
+  display: block;
   color: rgba(255,255,255,0.7);
   font-size: 0.875rem;
   font-weight: 600;

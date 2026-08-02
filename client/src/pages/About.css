@@ -1,8 +1,13 @@
 .page-hero {
   background: linear-gradient(135deg, #6c3fde 0%, #4f46e5 100%);
-  padding: 5rem 0 4.5rem;
+  padding: 3rem 0 2.5rem;
   position: relative;
   overflow: hidden;
+}
+
+.page-hero + section,
+.page-hero + div + section {
+  padding-top: 3rem;
 }
 
 .page-hero::before {

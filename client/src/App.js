@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Services from './pages/Services';
+import AfterSchool from './pages/AfterSchool';
+import CursuriEngleza from './pages/CursuriEngleza';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import BlogList from './pages/BlogList';
@@ -25,7 +26,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/despre-noi" element={<About />} />
-          <Route path="/servicii" element={<Services />} />
+          <Route path="/after-school" element={<AfterSchool />} />
+          <Route path="/cursuri-engleza" element={<CursuriEngleza />} />
           <Route path="/galerie" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<BlogList />} />

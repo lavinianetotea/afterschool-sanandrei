@@ -115,7 +115,7 @@ export default function BlogPost() {
                 <Link to="/contact" className="btn btn-primary">
                   Înscrie-ți copilul
                 </Link>
-                <Link to="/servicii" className="blog-post-cta-link">
+                <Link to="/after-school" className="blog-post-cta-link">
                   Descoperă programul →
                 </Link>
               </div>

@@ -334,6 +334,9 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .engleza-hero {
+    background-position-x: left;
+  }
   .engleza-section-split {
     flex-direction: column-reverse;
   }

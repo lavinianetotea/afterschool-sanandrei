@@ -114,6 +114,16 @@
   border-color: var(--primary);
 }
 
+.modal-field input.input-error,
+.modal-field textarea.input-error {
+  border-color: #dc2626;
+}
+
+.modal-field-error {
+  font-size: 0.78rem;
+  color: #dc2626;
+}
+
 .modal-error {
   font-size: 0.875rem;
   color: #dc2626;

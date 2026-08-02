@@ -28,7 +28,7 @@ app.use(express.json());
 app.post('/api/contact', async (req, res) => {
   const { parentName, childName, phone, email, childAge, message, plan } = req.body;
 
-  if (!parentName || !childName || !phone || !email) {
+  if (!parentName || !childName || !phone || !email || !childAge) {
     return res.status(400).json({ error: 'Câmpuri obligatorii lipsă.' });
   }
 

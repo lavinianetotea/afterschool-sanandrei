@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section style={{ paddingTop: "1rem" }}>
+      <section>
         <div className="container">
           <div className="cta-section">
             <span

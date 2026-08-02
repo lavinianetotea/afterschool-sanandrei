@@ -1,0 +1,368 @@
+.engleza-hero {
+  background:
+    linear-gradient(135deg, rgba(108, 63, 222, 0.72) 0%, rgba(79, 70, 229, 0.68) 100%),
+    url('../../public/cursuri/hero-engleza.jpg') center 30% / cover no-repeat;
+}
+
+.engleza-hero h1,
+.engleza-hero p,
+.engleza-hero .page-hero-tag {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+.engleza-intro {
+  max-width: 100%;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Section split: text left, illustration right */
+.engleza-section-split {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.engleza-section-split > div:first-child {
+  flex: 1;
+}
+
+.engleza-illustration {
+  flex-shrink: 0;
+  width: 220px;
+}
+
+.engleza-illustration-lg {
+  width: 280px;
+}
+
+.engleza-illustration-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Pricing section */
+.pricing-section {
+  background: var(--white);
+}
+
+.engleza-plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.engleza-plan-card {
+  background: var(--bg-gray);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  position: relative;
+}
+
+.engleza-plan-card.highlighted {
+  border-color: var(--primary);
+  background: #f5f3ff;
+}
+
+.engleza-plan-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+}
+
+.engleza-plan-icon-bubble {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.engleza-plan-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.engleza-plan-price {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.engleza-plan-discount {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #d97706;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.engleza-plan-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1rem 0;
+}
+
+.engleza-plan-sibling {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.engleza-plan-sibling-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.engleza-plan-sibling-discount {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #d97706;
+}
+
+.engleza-plan-btn {
+  display: block;
+  text-align: center;
+  margin-top: 1.25rem;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+}
+
+.engleza-plan-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.engleza-plan-btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.engleza-plan-btn-primary:hover {
+  background: #5730c7;
+}
+
+/* Sibling discount banner */
+.engleza-reducere {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.engleza-reducere-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.engleza-reducere-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.engleza-reducere-left strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.engleza-reducere-left p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.engleza-reducere-right {
+  flex-shrink: 0;
+  width: 160px;
+}
+
+/* Info cards (calendar + orar) */
+.engleza-info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.engleza-info-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  border-top: 4px solid var(--primary);
+}
+
+.engleza-info-icon {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.engleza-info-card h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.engleza-info-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.engleza-info-card strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Calendar section */
+.engleza-calendar-section {
+  background: var(--bg-gray);
+}
+
+.engleza-date-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 560px;
+}
+
+.engleza-date-box {
+  background: var(--primary-light);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.engleza-date-day {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.engleza-date-month {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+}
+
+.engleza-date-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.engleza-date-card strong {
+  color: var(--primary);
+}
+
+/* Why small groups */
+.engleza-reasons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  max-width: 600px;
+}
+
+.engleza-reasons li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.engleza-reasons li::before {
+  content: '✓';
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .engleza-section-split {
+    flex-direction: column-reverse;
+  }
+
+  .engleza-illustration,
+  .engleza-illustration-lg {
+    width: 160px;
+    align-self: center;
+  }
+
+  .engleza-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .engleza-info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .engleza-reducere {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .engleza-reducere-right {
+    align-self: center;
+  }
+
+  .engleza-date-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

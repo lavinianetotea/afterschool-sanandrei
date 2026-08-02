@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 const express = require('express');
 const cors = require('cors');
 const { Resend } = require('resend');
@@ -26,7 +26,7 @@ app.use(cors({
 app.use(express.json());
 
 app.post('/api/contact', async (req, res) => {
-  const { parentName, childName, phone, email, childAge, message } = req.body;
+  const { parentName, childName, phone, email, childAge, message, plan } = req.body;
 
   if (!parentName || !childName || !phone || !email) {
     return res.status(400).json({ error: 'Câmpuri obligatorii lipsă.' });
@@ -37,10 +37,11 @@ app.post('/api/contact', async (req, res) => {
       from: 'After School Sânandrei <onboarding@resend.dev>',
       to: process.env.EMAIL_TO,
       replyTo: email,
-      subject: `Cerere înscriere – ${childName}`,
+      subject: `Cerere înscriere cursuri engleză – ${childName}`,
       html: `
-        <h2>Cerere nouă de înscriere</h2>
+        <h2>Cerere nouă de înscriere – Cursuri Engleză</h2>
         <table style="border-collapse:collapse;width:100%">
+          ${plan ? `<tr><td style="padding:8px;border:1px solid #e2e8f0"><strong>Abonament ales</strong></td><td style="padding:8px;border:1px solid #e2e8f0;color:#6c3fde"><strong>${plan}</strong></td></tr>` : ''}
           <tr><td style="padding:8px;border:1px solid #e2e8f0"><strong>Nume părinte</strong></td><td style="padding:8px;border:1px solid #e2e8f0">${parentName}</td></tr>
           <tr><td style="padding:8px;border:1px solid #e2e8f0"><strong>Nume copil</strong></td><td style="padding:8px;border:1px solid #e2e8f0">${childName}</td></tr>
           <tr><td style="padding:8px;border:1px solid #e2e8f0"><strong>Vârsta copilului</strong></td><td style="padding:8px;border:1px solid #e2e8f0">${childAge || 'Nespecificat'}</td></tr>

@@ -347,6 +347,10 @@
     align-self: center;
   }
 
+  .engleza-plan-card.highlighted {
+    padding-top: 3.5rem;
+  }
+
   .engleza-plans {
     grid-template-columns: 1fr;
   }

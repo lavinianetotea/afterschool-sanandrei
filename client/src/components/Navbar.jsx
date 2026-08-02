@@ -34,8 +34,8 @@ export default function Navbar() {
 
           <li
             className="nav-dropdown"
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
+            onMouseEnter={() => { if (window.innerWidth > 768) setDropdownOpen(true); }}
+            onMouseLeave={() => { if (window.innerWidth > 768) setDropdownOpen(false); }}
           >
             <button
               className={`nav-dropdown-trigger${servicesActive ? ' active' : ''}`}

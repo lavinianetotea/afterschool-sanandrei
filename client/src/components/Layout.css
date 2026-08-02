@@ -141,16 +141,14 @@
   }
 
   .nav-dropdown-menu {
+    display: none;
     position: static;
     box-shadow: none;
     background: var(--primary-light);
     border-radius: 8px;
     padding: 0.25rem 0.5rem;
     margin-top: 0.25rem;
-  }
-
-  .nav-dropdown:hover .nav-dropdown-menu {
-    display: none;
+    padding-top: 0.25rem;
   }
 
   .nav-dropdown-menu.open {

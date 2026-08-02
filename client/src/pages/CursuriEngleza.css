@@ -71,9 +71,7 @@
 }
 
 .engleza-plan-badge {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
+  display: inline-block;
   background: var(--primary);
   color: #fff;
   font-size: 0.7rem;
@@ -82,6 +80,7 @@
   letter-spacing: 0.06em;
   padding: 0.3rem 0.75rem;
   border-radius: 999px;
+  margin-bottom: 0.75rem;
 }
 
 .engleza-plan-icon-bubble {
@@ -345,10 +344,6 @@
   .engleza-illustration-lg {
     width: 160px;
     align-self: center;
-  }
-
-  .engleza-plan-card.highlighted {
-    padding-top: 3.5rem;
   }
 
   .engleza-plans {

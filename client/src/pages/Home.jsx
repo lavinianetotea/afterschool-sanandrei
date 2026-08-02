@@ -105,7 +105,7 @@ export default function Home() {
               <Link to="/contact" className="btn btn-primary">
                 Înscrie copilul
               </Link>
-              <Link to="/servicii" className="btn btn-outline">
+              <Link to="/after-school" className="btn btn-outline">
                 Află mai multe
               </Link>
             </div>
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section style={{ paddingTop: "1rem" }}>
         <div className="container">
           <div className="cta-section">
             <span

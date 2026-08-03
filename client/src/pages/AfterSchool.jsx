@@ -79,7 +79,7 @@ export default function AfterSchool() {
         <div className="container">
           <div className="page-hero-inner">
             <span className="page-hero-tag">Serviciile noastre</span>
-            <h1>Program after-school</h1>
+            <h1>After-school</h1>
             <p>
               Tot ce are nevoie copilul tău într-un singur loc, într-un mediu
               sigur și profesionist.

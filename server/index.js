@@ -37,9 +37,9 @@ app.post('/api/contact', async (req, res) => {
       from: 'After School Sânandrei <onboarding@resend.dev>',
       to: process.env.EMAIL_TO,
       replyTo: email,
-      subject: `Cerere înscriere cursuri engleză – ${childName}`,
+      subject: `Cerere înscriere – ${childName}`,
       html: `
-        <h2>Cerere nouă de înscriere – Cursuri Engleză</h2>
+        <h2>Cerere nouă de înscriere</h2>
         <table style="border-collapse:collapse;width:100%">
           ${plan ? `<tr><td style="padding:8px;border:1px solid #e2e8f0"><strong>Abonament ales</strong></td><td style="padding:8px;border:1px solid #e2e8f0;color:#6c3fde"><strong>${plan}</strong></td></tr>` : ''}
           <tr><td style="padding:8px;border:1px solid #e2e8f0"><strong>Nume părinte</strong></td><td style="padding:8px;border:1px solid #e2e8f0">${parentName}</td></tr>

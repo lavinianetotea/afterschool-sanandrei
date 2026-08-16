@@ -1,5 +1,17 @@
 export const ARTICLES = [
   {
+    slug: "back-to-school",
+    title:
+      '"Back to School" — cum faci ca începutul de an școlar să nu fie o dramă',
+    description:
+      "Revenirea la școală după vacanță declanșează anxietate la 1 din 3 copii. Nu din cauza leneviei, ci pentru că creierul are nevoie de o perioadă de tranziție. Iată cum o faci mai ușoară.",
+    category: "Idei pentru părinți",
+    publishDate: "2026-08-16",
+    image: "/blog/back-to-school.jpg",
+    imageAlt: "Copil zâmbitor cu ghiozdan nou în prima zi de școală",
+    readingTimeMinutes: 7,
+  },
+  {
     slug: "cum-alegi-after-school",
     title: "7 criterii esențiale când alegi un after-school pentru copilul tău",
     description:

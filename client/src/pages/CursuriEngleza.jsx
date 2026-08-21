@@ -63,28 +63,14 @@ export default function CursuriEngleza() {
         </div>
       </section>
 
-      <section className="engleza-calendar-section">
+      <section>
         <div className="container">
-          <span className="section-tag">Calendar & Orar</span>
-          <h2 className="section-title">Când încep cursurile?</h2>
-          <div className="engleza-info-cards">
-            <div className="engleza-info-card">
-              <h3>Start: septembrie 2026</h3>
-              <p>
-                Cursurile încep odată cu noul an școlar, după{" "}
-                <strong>7 septembrie 2026</strong>. Înscrierile sunt deschise
-                acum.
-              </p>
-            </div>
-            <div className="engleza-info-card">
-              <h3>Orarul se stabilește împreună</h3>
-              <p>
-                Zilele și orele vor fi alese după formarea grupelor, în funcție
-                de disponibilitatea copiilor înscriși. Vrem să găsim un orar
-                potrivit pentru toată lumea.
-              </p>
-            </div>
-          </div>
+          <span className="section-tag">Feedback constant</span>
+          <h2 className="section-title">Feedback constant</h2>
+          <ul className="engleza-reasons">
+            <li>Vrem să știi cum evoluează copilul tău, nu doar să îl aduci la curs.</li>
+            <li>După fiecare oră de engleză, primești informații despre activitatea și progresul lui.</li>
+          </ul>
         </div>
       </section>
 

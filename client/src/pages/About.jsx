@@ -1,4 +1,28 @@
+import { useState } from "react";
 import "./About.css";
+
+const aboutImages = [
+  { src: "/servicii/sala-clasa.png", alt: "Sala de clasă After School Sânandrei" },
+  { src: "/servicii/casa-afterschool.jpg", alt: "Clădirea After School Sânandrei" },
+];
+
+function ImageCarousel() {
+  const [current, setCurrent] = useState(0);
+  const prev = () => setCurrent((c) => (c - 1 + aboutImages.length) % aboutImages.length);
+  const next = () => setCurrent((c) => (c + 1) % aboutImages.length);
+  return (
+    <div className="about-carousel">
+      <img src={aboutImages[current].src} alt={aboutImages[current].alt} className="about-visual-img" />
+      <button className="carousel-btn carousel-btn-prev" onClick={prev} aria-label="Anterior">&#8249;</button>
+      <button className="carousel-btn carousel-btn-next" onClick={next} aria-label="Următor">&#8250;</button>
+      <div className="carousel-dots">
+        {aboutImages.map((_, i) => (
+          <button key={i} className={`carousel-dot${i === current ? " active" : ""}`} onClick={() => setCurrent(i)} aria-label={`Imaginea ${i + 1}`} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 const values = [
   {
@@ -64,13 +88,7 @@ export default function About() {
       <section>
         <div className="container">
           <div className="about-grid">
-            <div className="about-visual">
-              <img
-                src="/servicii/sala-clasa.png"
-                alt="Sala de clasă After School Sânandrei"
-                className="about-visual-img"
-              />
-            </div>
+            <ImageCarousel />
             <div className="about-content">
               <span className="section-tag">Misiunea noastră</span>
               <h2>Un loc sigur pentru copilul tău</h2>
@@ -101,22 +119,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className="values-section">
-        <div className="container">
-          <span className="section-tag">Ce ne ghidează</span>
-          <h2 className="section-title">Valorile noastre</h2>
-          <div className="values-grid">
-            {values.map((v) => (
-              <div className="value-card" key={v.title}>
-                <img src={v.img} alt={v.title} className="value-icon-img" />
-                <h4>{v.title}</h4>
-                <p>{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section>
         <div className="container">
           <span className="section-tag">Oamenii noștri</span>
@@ -141,6 +143,22 @@ export default function About() {
                 <h3>{m.name}</h3>
                 <span className="role">{m.role}</span>
                 <p>{m.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="values-section">
+        <div className="container">
+          <span className="section-tag">Ce ne ghidează</span>
+          <h2 className="section-title">Valorile noastre</h2>
+          <div className="values-grid">
+            {values.map((v) => (
+              <div className="value-card" key={v.title}>
+                <img src={v.img} alt={v.title} className="value-icon-img" />
+                <h4>{v.title}</h4>
+                <p>{v.desc}</p>
               </div>
             ))}
           </div>

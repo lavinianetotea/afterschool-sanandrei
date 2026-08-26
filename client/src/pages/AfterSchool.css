@@ -143,6 +143,15 @@
 .schedule-table tr:last-child td { border-bottom: none; }
 .schedule-table tr:hover td { background: var(--bg-soft); }
 
+/* Shared pricing-amount used across pages */
+.pricing-amount {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
 /* Pricing */
 .pricing-section {
   background: var(--bg-gray);
@@ -415,6 +424,7 @@
   .afterschool-grid { grid-template-columns: 1fr; }
   .schedule-table th, .schedule-table td { padding: 0.75rem 1rem; }
   .schedule-pricing-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .pricing-amount { font-size: 3rem; }
   .bts-amount { font-size: 4.5rem; }
   .pricing-includes-card, .pricing-notes-card { padding: 1.25rem 1.25rem; }
 }

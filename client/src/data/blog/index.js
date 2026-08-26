@@ -1,5 +1,16 @@
 export const ARTICLES = [
   {
+    slug: "pretul-mic-la-after-school",
+    title: "Opționalele contra cost din after-school: cine câștigă și cine pierde?",
+    description:
+      "Un after-school cu multe ateliere opționale plătite separat pare o ofertă bogată. Dar ce se întâmplă cu copiii care nu merg la opționale — și de ce mai bine alegi tu profesorul pentru activitățile extra.",
+    category: "Idei pentru părinți",
+    publishDate: "2026-08-25",
+    image: "/blog/pretul-mic-la-after-school.jpg",
+    imageAlt: "Părinte care analizează oferte pentru after-school",
+    readingTimeMinutes: 5,
+  },
+  {
     slug: "back-to-school",
     title:
       '"Back to School" — cum faci ca începutul de an școlar să nu fie o dramă',

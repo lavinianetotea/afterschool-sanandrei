@@ -142,34 +142,82 @@ export default function AfterSchool() {
         <div className="container">
           <span className="section-tag">Tarife</span>
           <h2 className="section-title">Cât costă?</h2>
-          <div className="pricing-card">
-            <div className="pricing-price">
-              <span className="pricing-amount">1200</span>
-              <div className="pricing-suffix">
-                <span className="pricing-currency">RON</span>
-                <span className="pricing-period">/ lună</span>
+          <div className="pricing-layout">
+
+            {/* Hero card Back to School */}
+            <div className="bts-card">
+              <div className="bts-badge">✦ Back to School</div>
+
+              <div className="bts-price-block">
+                <span className="bts-price-rays" aria-hidden="true" />
+                <span className="bts-amount">1.100</span>
+              </div>
+              <div className="bts-unit">
+                lei&nbsp;<span className="bts-slash">/</span>&nbsp;<span className="bts-luna">lună</span>
+              </div>
+
+              <div className="bts-regular-price">
+                Preț obișnuit:&nbsp;<span>1.200 lei/lună</span>
+              </div>
+
+              <hr className="bts-divider" />
+
+              <div className="bts-deadline-block">
+                <div className="bts-calendar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="4" width="18" height="17" rx="3" stroke="currentColor" strokeWidth="2"/>
+                    <path d="M3 9h18" stroke="currentColor" strokeWidth="2"/>
+                    <path d="M8 2v4M16 2v4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    <path d="M8 14l2.5 2.5L16 11" stroke="#e91e8c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <p className="bts-deadline-text">
+                  Preț valabil pe tot parcursul anului școlar{" "}
+                  <strong>2026–2027</strong> pentru înscrierile realizate până în
+                </p>
+              </div>
+
+              <div className="bts-date-pill">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
+                </svg>
+                8 septembrie
               </div>
             </div>
-            <ul className="pricing-includes">
-              <li>Ajutor la teme, sprijin la toate materiile</li>
-              <li>Engleză de două ori pe săptămână</li>
-              <li>Feedback lunar pentru părinți</li>
-              <li>Materiale de studiu incluse</li>
-            </ul>
-            <ul className="pricing-notes">
-              <li>
-                Abonamentul lunar de bază (1200 ron) se achită integral,
-                indiferent de numărul absențelor copilului.
-              </li>
-              <li>
-                Taxa de masă se achită suplimentar doar pentru zilele în care
-                copilul este prezent.
-              </li>
-              <li>
-                În vacanțele școlare, programul este extins 08:00–17:00, cu o
-                contribuție suplimentară de 50 RON/zi.
-              </li>
-            </ul>
+
+            {/* Detalii abonament */}
+            <div className="pricing-details">
+              <div className="pricing-includes-card">
+                <h3 className="pricing-details-title">Ce include abonamentul</h3>
+                <ul className="pricing-includes">
+                  <li>Ajutor la teme, sprijin la toate materiile</li>
+                  <li>Engleză de două ori pe săptămână</li>
+                  <li>Feedback lunar pentru părinți</li>
+                  <li>Materiale de studiu incluse</li>
+                </ul>
+              </div>
+              <div className="pricing-notes-card">
+                <h3 className="pricing-details-title">De știut</h3>
+                <ul className="pricing-notes">
+                  <li>
+                    Abonamentul lunar de bază se achită integral,
+                    indiferent de numărul absențelor copilului.
+                  </li>
+                  <li>
+                    Taxa de masă (20 lei/zi) se achită suplimentar doar pentru zilele în care
+                    copilul este prezent.
+                  </li>
+                  <li>
+                    Reducere de 10% pentru frați înscriși simultan.
+                  </li>
+                  <li>
+                    În vacanțele școlare, programul este extins 08:00–17:00, cu o
+                    contribuție suplimentară de 50 lei/zi.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

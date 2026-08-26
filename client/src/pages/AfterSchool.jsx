@@ -149,8 +149,7 @@ export default function AfterSchool() {
               <div className="bts-badge">✦ Back to School</div>
 
               <div className="bts-price-block">
-                <span className="bts-price-rays" aria-hidden="true" />
-                <span className="bts-amount">1.100</span>
+                <span className="pricing-amount">1.100</span>
               </div>
               <div className="bts-unit">
                 lei&nbsp;<span className="bts-slash">/</span>&nbsp;<span className="bts-luna">lună</span>

@@ -152,6 +152,10 @@
   line-height: 1;
 }
 
+.bts-card .pricing-amount {
+  font-size: 5.5rem;
+}
+
 /* Pricing */
 .pricing-section {
   background: var(--bg-gray);
@@ -222,48 +226,16 @@
 
 /* Price */
 .bts-price-block {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.bts-price-rays {
-  position: absolute;
-  inset: -18px;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg, #fde68a 2deg, transparent 4deg,
-    transparent 30deg, #fde68a 32deg, transparent 34deg,
-    transparent 60deg, #fde68a 62deg, transparent 64deg,
-    transparent 90deg, #fde68a 92deg, transparent 94deg,
-    transparent 120deg, #fde68a 122deg, transparent 124deg,
-    transparent 150deg, #fde68a 152deg, transparent 154deg,
-    transparent 180deg, #fde68a 182deg, transparent 184deg,
-    transparent 210deg, #fde68a 212deg, transparent 214deg,
-    transparent 240deg, #fde68a 242deg, transparent 244deg,
-    transparent 270deg, #fde68a 272deg, transparent 274deg,
-    transparent 300deg, #fde68a 302deg, transparent 304deg,
-    transparent 330deg, #fde68a 332deg, transparent 334deg
-  );
-  border-radius: 50%;
-  opacity: 0.35;
-}
-
-.bts-amount {
-  font-size: 5.5rem;
-  font-weight: 900;
-  color: #4c1d95;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  position: relative;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .bts-unit {
   font-size: 1.8rem;
   font-weight: 700;
   color: #4c1d95;
-  margin-top: 0.1rem;
   margin-bottom: 1.2rem;
 }
 

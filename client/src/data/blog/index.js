@@ -1,16 +1,5 @@
 export const ARTICLES = [
   {
-    slug: "pretul-mic-la-after-school",
-    title: "Opționalele contra cost din after-school: cine câștigă și cine pierde?",
-    description:
-      "Un after-school cu multe ateliere opționale plătite separat pare o ofertă bogată. Dar ce se întâmplă cu copiii care nu merg la opționale — și de ce mai bine alegi tu profesorul pentru activitățile extra.",
-    category: "Idei pentru părinți",
-    publishDate: "2026-08-25",
-    image: "/blog/pretul-mic-la-after-school.jpg",
-    imageAlt: "Părinte care analizează oferte pentru after-school",
-    readingTimeMinutes: 5,
-  },
-  {
     slug: "back-to-school",
     title:
       '"Back to School" — cum faci ca începutul de an școlar să nu fie o dramă',
@@ -44,39 +33,39 @@ export const ARTICLES = [
     imageAlt: "Copil care privește nedumerit un caiet cu lecții",
     readingTimeMinutes: 6,
   },
-  // {
-  //   slug: "pregatirea-pentru-scoala",
-  //   title: "Cum pregătim copilul pentru începutul școlii",
-  //   description:
-  //     "Ghiozdanul e gata, dar copilul tău e pregătit? Dincolo de litere și cifre, iată ce contează cu adevărat în prima zi de clasa I.",
-  //   category: "Idei pentru părinți",
-  //   publishDate: "2026-08-20",
-  //   image: "/blog/pregatirea-pentru-scoala.jpg",
-  //   imageAlt: "Copil zâmbitor cu ghiozdan în prima zi de școală",
-  //   readingTimeMinutes: 7,
-  // },
-  // {
-  //   slug: "ajutor-teme-eficient",
-  //   title: "Cum îl ajuți pe copil la teme fără certuri — 7 strategii dovedite",
-  //   description:
-  //     "Ajutorul la teme nu trebuie să fie o luptă. Descoperă 7 tehnici validate de psihologi pentru a transforma ora de teme într-un moment calm și productiv.",
-  //   category: "Teme și învățare",
-  //   publishDate: "2026-09-10",
-  //   image: "/blog/ajutor-teme-eficient.jpg",
-  //   imageAlt: "Copil care face teme la birou, calm și concentrat",
-  //   readingTimeMinutes: 6,
-  // },
-  // {
-  //   slug: "rutina-dupa-scoala",
-  //   title: "Rutina de după școală: teme, odihnă și timp pentru joacă",
-  //   description:
-  //     "Un program previzibil de după-amiază nu este un moft — este o nevoie neurobiologică. Cum construiești o rutină care funcționează cu adevărat.",
-  //   category: "Idei pentru părinți",
-  //   publishDate: "2026-09-15",
-  //   image: "/blog/rutina-dupa-scoala.jpg",
-  //   imageAlt: "Copil care citește calm la birou după-amiaza",
-  //   readingTimeMinutes: 5,
-  // },
+  {
+    slug: "pregatirea-pentru-scoala",
+    title: "Cum pregătim copilul pentru începutul școlii",
+    description:
+      "Ghiozdanul e gata, dar copilul tău e pregătit? Dincolo de litere și cifre, iată ce contează cu adevărat în prima zi de clasa I.",
+    category: "Idei pentru părinți",
+    publishDate: "2026-08-20",
+    image: "/blog/pregatirea-pentru-scoala.jpg",
+    imageAlt: "Copil zâmbitor cu ghiozdan în prima zi de școală",
+    readingTimeMinutes: 7,
+  },
+  {
+    slug: "ajutor-teme-eficient",
+    title: "Cum îl ajuți pe copil la teme fără certuri — 7 strategii dovedite",
+    description:
+      "Ajutorul la teme nu trebuie să fie o luptă. Descoperă 7 tehnici validate de psihologi pentru a transforma ora de teme într-un moment calm și productiv.",
+    category: "Teme și învățare",
+    publishDate: "2026-09-10",
+    image: "/blog/ajutor-teme-eficient.jpg",
+    imageAlt: "Copil care face teme la birou, calm și concentrat",
+    readingTimeMinutes: 6,
+  },
+  {
+    slug: "rutina-dupa-scoala",
+    title: "Rutina de după școală: teme, odihnă și timp pentru joacă",
+    description:
+      "Un program previzibil de după-amiază nu este un moft — este o nevoie neurobiologică. Cum construiești o rutină care funcționează cu adevărat.",
+    category: "Idei pentru părinți",
+    publishDate: "2026-09-15",
+    image: "/blog/rutina-dupa-scoala.jpg",
+    imageAlt: "Copil care citește calm la birou după-amiaza",
+    readingTimeMinutes: 5,
+  },
   {
     slug: "dezvoltarea-emotionala",
     title:
@@ -101,17 +90,18 @@ export const ARTICLES = [
     imageAlt: "Copil care învață engleză cu flashcards colorate",
     readingTimeMinutes: 6,
   },
-  // {
-  //   slug: "jocuri-educative-acasa",
-  //   title: "Joaca fără ecrane: 15 jocuri educative de acasă pe care copiii le adoră",
-  //   description:
-  //     "Copiii supra-stimulați de ecrane uită cum să se joace. Iată 15 idei concrete, fără tehnologie, grupate pe tipul de abilitate dezvoltată.",
-  //   category: "Idei pentru părinți",
-  //   publishDate: "2026-09-25",
-  //   image: "/blog/jocuri-educative-acasa.jpg",
-  //   imageAlt: "Copii care se joacă un joc de societate pe podea",
-  //   readingTimeMinutes: 5,
-  // },
+  {
+    slug: "jocuri-educative-acasa",
+    title:
+      "Joaca fără ecrane: 15 jocuri educative de acasă pe care copiii le adoră",
+    description:
+      "Copiii supra-stimulați de ecrane uită cum să se joace. Iată 15 idei concrete, fără tehnologie, grupate pe tipul de abilitate dezvoltată.",
+    category: "Idei pentru părinți",
+    publishDate: "2026-09-25",
+    image: "/blog/jocuri-educative-acasa.jpg",
+    imageAlt: "Copii care se joacă un joc de societate pe podea",
+    readingTimeMinutes: 5,
+  },
 ];
 
 export const CATEGORIES = [

@@ -97,7 +97,7 @@ export const ARTICLES = [
     description:
       "Copiii supra-stimulați de ecrane uită cum să se joace. Iată 15 idei concrete, fără tehnologie, grupate pe tipul de abilitate dezvoltată.",
     category: "Idei pentru părinți",
-    publishDate: "2026-09-25",
+    publishDate: "2026-09-24",
     image: "/blog/jocuri-educative-acasa.jpg",
     imageAlt: "Copii care se joacă un joc de societate pe podea",
     readingTimeMinutes: 5,

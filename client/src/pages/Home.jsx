@@ -94,6 +94,9 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <video className="hero-video" autoPlay muted loop playsInline>
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
         <div className="container hero-inner">
           <div>
             <h1>Locul unde copiii cresc cu bucurie</h1>

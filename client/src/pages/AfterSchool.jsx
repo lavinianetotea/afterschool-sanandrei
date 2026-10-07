@@ -75,7 +75,7 @@ const schedule = [
 export default function AfterSchool() {
   return (
     <>
-      <div className="page-hero">
+      <div className="page-hero afterschool-hero">
         <div className="container">
           <div className="page-hero-inner">
             <span className="page-hero-tag">Serviciile noastre</span>

@@ -8,7 +8,7 @@ imageAlt: Copii care se joacă un joc de societate pe podea
 readingTimeMinutes: 5
 ---
 
-„Nu am cu ce să mă joc" este o frază pe care o auzi când copilul este supra-stimulat de ecrane și sub-antrenat în jocul creativ. Paradoxal, copiii cu mai puțin acces la ecrane sunt mai buni la jocul independent. Mai jos găsești 15 idei concrete, grupate pe tipul de abilitate dezvoltată — toate fără ecrane, toate testate cu copii reali.
+„Nu am cu ce să mă joc" este o frază pe care o auzi când copilul este supra-stimulat de ecrane și sub-antrenat în jocul creativ. Paradoxal, copiii cu mai puțin acces la ecrane sunt mai buni la jocul independent. Mai jos găsești 15 idei concrete, grupate pe tipul de abilitate dezvoltată, toate fără ecrane, toate testate cu copii reali.
 
 ## Jocuri care dezvoltă gândirea logică și matematică
 
@@ -39,7 +39,7 @@ readingTimeMinutes: 5
 
 ## Cât joc liber are nevoie un copil?
 
-OMS recomandă minimum 60 de minute de activitate fizică zilnică pentru copiii de 5–17 ani. Dar neuroștiința jocului arată că jocul liber nedirijat este esențial pentru maturizarea cortexului prefrontal. Un copil care se joacă liber nu pierde timp — își construiește creierul.
+OMS recomandă minimum 60 de minute de activitate fizică zilnică pentru copiii de 5–17 ani. Dar neuroștiința jocului arată că jocul liber nedirijat este esențial pentru maturizarea cortexului prefrontal. Un copil care se joacă liber nu pierde timp, își construiește creierul.
 
 ---
 
